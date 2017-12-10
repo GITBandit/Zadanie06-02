@@ -16,11 +16,6 @@ public class MultiArray {
         }
     }
 
-    public int[][] getRowCount() {
-/*        for(int i=0; i< )
-        int count;*/
-        return tablica;
-    }
 
     public void setTablica(int[][] tablica) {
         this.tablica = tablica;
@@ -46,7 +41,7 @@ public class MultiArray {
 
 
     int findMax() {
-        int x = 0;
+        int x = Integer.MIN_VALUE;
 
         for (int i = 0; i < tablica.length; i++) {
             for (int j = 0; j < tablica[i].length; j++) {
