@@ -9,17 +9,10 @@ public class MultiArray {
 
         Random random = new Random();
 
-        for (int i = 0; i<n; i++){
-            for (int j = 0; j<m; j++){
-                tablica[n-1][m-1] = random.nextInt();
-            }
-        }
+        randomize();
+
     }
 
-
-    public void setTablica(int[][] tablica) {
-        this.tablica = tablica;
-    }
 
     void randomize(){
 
